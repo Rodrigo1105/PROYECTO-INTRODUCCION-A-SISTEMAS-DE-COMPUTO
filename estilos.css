@@ -1,0 +1,391 @@
+/* Tipografía general */
+body {
+  font-family: 'Helvetica', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #fff8dc, #ffffff); /* degradado amarillo a blanco */
+  color: #003366;
+}
+
+/* Encabezado */
+header {
+  background-color: #007BFF; /* azul brillante */
+  color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  padding-bottom: 1em;
+}
+
+/* Encabezado superior */
+.encabezado-superior {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+}
+
+.logo {
+  height: 90px;
+  width: 90px;
+  background-color: white;
+  padding: 8px;
+  border-radius: 12px;
+}
+
+/* Título principal */
+.encabezado-superior h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.9em;
+  flex: 1;
+  text-align: center;
+  margin: 0;
+  color: white;
+}
+
+/* Frase turística */
+.frase-turismo {
+  font-style: italic;
+  font-size: 1.2em;
+  color: #e0f0ff;
+  max-width: 200px;
+  text-align: right;
+}
+
+/* Menú de navegación */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a:focus,
+nav ul li a:active {
+  background-color: black;
+  color: white;
+}
+
+/* Secciones principales */
+section {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: rgba(255,255,255,0.95);
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Estilo del contenido paralelo (texto e imagen) */
+.contenido {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenido img {
+  flex: 1 1 45%;
+  max-width: 400px;
+  min-width: 300px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.contenido .texto {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Videos */
+.video-fijo {
+  width: 1000px;
+  height: 350px;
+  margin: 30px auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.video-fijo iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: none;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin: 40px 0;
+  font-size: 0.9em;
+  color: #333;
+}
+/* Botón flotante redes sociales */
+.social-float {
+  position: fixed;
+  bottom: 150px;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 1000;
+}
+
+.social-float a img {
+  width: 40px;
+  height: 40px;
+  border-radius: 40%;
+  background-color: #007BFF;
+  padding: 10px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.social-float a img:hover {
+  transform: scale(1.15);
+}
+
+/* Banner inferior de contacto */
+.banner-contacto {
+  background-color: #cce5ff;
+  color: #003366;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.95em;
+  margin-top: 40px;
+  border-top: 3px solid #007BFF;
+}
+
+.banner-contacto a {
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.banner-contacto a:hover {
+  text-decoration: underline;
+}
+/* Sección de enlaces de noticias */
+.noticias-extra {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #c0d6ec;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.noticias-extra h2 {
+  text-align: center;
+  color: #003366;
+  margin-bottom: 15px;
+}
+
+.noticias-extra ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: 1em;
+}
+
+.noticias-extra ul li {
+  margin: 10px 0;
+}
+
+.noticias-extra ul li a {
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.noticias-extra ul li a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+.noticias-extra {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #b0c9e0; /* Azul sobrio */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.noticias-extra h2 {
+  color: #002244;
+  margin-bottom: 25px;
+}
+.noticia-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.noticia-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.noticia-card p {
+  color: #003366;
+  font-weight: bold;
+  margin: 0;
+}
+.testimonios {
+  background-color: #f5f9fc;
+  padding: 30px;
+  margin: 30px auto;
+  border-radius: 10px;
+  max-width: 1000px;
+  text-align: center;
+}
+.testimonio {
+  margin-bottom: 20px;
+  font-style: italic;
+  color: #003366;
+}
+
+@media (max-width: 768px) {
+  .contenido {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contenido img {
+    width: 90%;
+    max-width: 100%;
+    min-width: auto;
+  }
+}
+  .contenido .texto {
+    width: 100%;
+  }
+
+  .video-fijo {
+  aspect-ratio: 16 / 9;
+  width: 95%;
+  max-width: 1000px;
+  margin: 30px auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.video-fijo iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: none;
+}
+
+.grid-noticias {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.noticia-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+  .noticia-card img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .destino-card img {
+    height: 100px;
+  }
+.otros-destinos {
+  text-align: center;
+  padding: 30px;
+}
+
+.grid-destinos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.destino-card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.destino-card img {
+  width: 35px;
+  height: 50%;
+  object-fit: cover;
+}
+
+.destino-card p {
+  margin: 0;
+  padding: 10px;
+  font-weight: bold;
+  color: #002244;
+}
+/* Botón para subir */
+#btn-subir {
+  position: fixed;
+  bottom: 85px;
+  right: 30px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 50%;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, transform 0.3s;
+  z-index: 999;
+  display: none; /* Oculto por defecto */
+}
+
+#btn-subir:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px) scale(1.1);
+}
+.estadisticas-turismo {
+  background-color: #f0f8ff;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 750px;
+  margin: 40px auto;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.grafico-pequeno {
+  max-width: 600px;
+  margin: 20px auto;
+  display: block;
+}
