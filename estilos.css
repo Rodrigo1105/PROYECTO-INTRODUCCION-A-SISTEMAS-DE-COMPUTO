@@ -4,19 +4,18 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to bottom, #fff8dc, #ffffff); /* degradado amarillo a blanco */
+  background: linear-gradient(to bottom, #fff8dc, #ffffff);
   color: #003366;
 }
 
 /* Encabezado */
 header {
-  background-color: #007BFF; /* azul brillante */
+  background-color: #007BFF;
   color: white;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   padding-bottom: 1em;
 }
 
-/* Encabezado superior */
 .encabezado-superior {
   display: flex;
   align-items: center;
@@ -38,7 +37,6 @@ header {
   height: auto;
 }
 
-/* Título principal */
 .encabezado-superior h1 {
   font-family: 'Playfair Display', serif;
   font-size: 2.9em;
@@ -48,7 +46,6 @@ header {
   color: white;
 }
 
-/* Frase turística */
 .frase-turismo {
   font-style: italic;
   font-size: 1.2em;
@@ -57,7 +54,6 @@ header {
   text-align: right;
 }
 
-/* Menú de navegación */
 nav ul {
   display: flex;
   justify-content: center;
@@ -87,7 +83,6 @@ nav ul li a:active {
   color: white;
 }
 
-/* Secciones principales */
 section {
   max-width: 1100px;
   margin: 40px auto;
@@ -97,7 +92,6 @@ section {
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-/* Estilo del contenido paralelo (texto e imagen) */
 .contenido {
   display: flex;
   flex-wrap: wrap;
@@ -120,7 +114,6 @@ section {
   min-width: 300px;
 }
 
-/* Videos */
 .video-fijo {
   width: 1000px;
   height: 350px;
@@ -135,14 +128,13 @@ section {
   border: none;
 }
 
-/* Footer */
 footer {
   text-align: center;
   margin: 40px 0;
   font-size: 0.9em;
   color: #333;
 }
-/* Botón flotante redes sociales */
+
 .social-float {
   position: fixed;
   bottom: 150px;
@@ -167,7 +159,6 @@ footer {
   transform: scale(1.15);
 }
 
-/* Banner inferior de contacto */
 .banner-contacto {
   background-color: #cce5ff;
   color: #003366;
@@ -187,20 +178,20 @@ footer {
 .banner-contacto a:hover {
   text-decoration: underline;
 }
-/* Sección de enlaces de noticias */
+
 .noticias-extra {
   max-width: 1100px;
   margin: 40px auto;
   padding: 20px;
-  background-color: #c0d6ec;
+  background-color: #b0c9e0;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
 }
 
 .noticias-extra h2 {
-  text-align: center;
-  color: #003366;
-  margin-bottom: 15px;
+  color: #002244;
+  margin-bottom: 25px;
 }
 
 .noticias-extra ul {
@@ -219,25 +210,12 @@ footer {
   font-weight: bold;
   transition: color 0.3s ease;
 }
-	
+
 .noticias-extra ul li a:hover {
   color: #0056b3;
   text-decoration: underline;
 }
-.noticias-extra {
-  max-width: 1100px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: #b0c9e0; /* Azul sobrio */
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  text-align: center;
-}
 
-.noticias-ext	ra h2 {
-  color: #002244;
-  margin-bottom: 25px;
-}
 .noticia-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
@@ -255,6 +233,7 @@ footer {
   font-weight: bold;
   margin: 0;
 }
+
 .testimonios {
   background-color: #f5f9fc;
   padding: 30px;
@@ -263,51 +242,11 @@ footer {
   max-width: 1000px;
   text-align: center;
 }
+
 .testimonio {
   margin-bottom: 20px;
   font-style: italic;
   color: #003366;
-}
-
-@media screen and (max-width: 768px) {
-  .contenido {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .logo {
-    width: 80%;
-    max-width: 200px;
-  }
-
-  nav ul {
-    flex-direction: column;
-    padding: 0;
-  }
-
-  nav ul li {
-    margin: 10px 0;
-  }
-
-  .texto {
-    padding: 0 10px;
-  }
-}
-  }
-
-  .video-fijo {
-  aspect-ratio: 16 / 9;
-  width: 95%;
-  max-width: 1000px;
-  margin: 30px auto;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-}
-
-.video-fijo iframe {
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  border: none;
 }
 
 .grid-noticias {
@@ -328,15 +267,11 @@ footer {
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   transition: transform 0.3s, box-shadow 0.3s;
 }
-	
-  .noticia-card img {
-    width: 60px;
-    height: 60px;
-  }
 
-  .destino-card img {
-    height: 100px;
-  }
+.destino-card img {
+  height: 100px;
+}
+
 .otros-destinos {
   text-align: center;
   padding: 30px;
@@ -368,7 +303,7 @@ footer {
   font-weight: bold;
   color: #002244;
 }
-/* Botón para subir */
+
 #btn-subir {
   position: fixed;
   bottom: 85px;
@@ -383,13 +318,14 @@ footer {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   transition: background-color 0.3s, transform 0.3s;
   z-index: 999;
-  display: none; /* Oculto por defecto */
+  display: none;
 }
 
 #btn-subir:hover {
   background-color: #0056b3;
   transform: translateY(-3px) scale(1.1);
 }
+
 .estadisticas-turismo {
   background-color: #f0f8ff;
   padding: 30px;
@@ -399,8 +335,110 @@ footer {
   text-align: center;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
+
 .grafico-pequeno {
   max-width: 600px;
   margin: 20px auto;
   display: block;
+}
+
+/* Responsive tablets */
+@media screen and (max-width: 768px) {
+  .encabezado-superior {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .encabezado-superior h1 {
+    font-size: 2em;
+    margin: 10px 0;
+  }
+
+  .frase-turismo {
+    text-align: center;
+    max-width: 100%;
+    font-size: 1em;
+    padding: 5px;
+  }
+
+  .logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .contenido {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contenido img {
+    max-width: 90%;
+    min-width: unset;
+  }
+
+  .texto {
+    padding: 0 10px;
+  }
+
+  .video-fijo {
+    width: 95%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  .social-float {
+    bottom: 100px;
+    right: 15px;
+  }
+
+  .estadisticas-turismo {
+    padding: 20px;
+    margin: 20px 10px;
+  }
+
+  .grafico-pequeno {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+}
+
+/* Responsive móviles pequeños */
+@media screen and (max-width: 480px) {
+  .encabezado-superior h1 {
+    font-size: 1.6em;
+  }
+
+  .frase-turismo {
+    font-size: 0.9em;
+  }
+
+  nav ul li a {
+    padding: 6px 10px;
+    font-size: 0.9em;
+  }
+
+  .noticia-card img,
+  .destino-card img {
+    width: 50px;
+    height: auto;
+  }
+
+  .grid-destinos,
+  .grid-noticias {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonios {
+    padding: 20px 10px;
+  }
 }
